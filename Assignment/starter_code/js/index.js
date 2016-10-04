@@ -1,5 +1,10 @@
 $(document).ready(start);
 
 function start(){
-  alert('hello');
+  $('.mobile-nav').click(showMobileNav);
+  console.log('click');
+}
+
+function showMobileNav(){
+  $('nav').slideToggle();
 }
